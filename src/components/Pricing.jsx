@@ -14,6 +14,7 @@ const tiers = [
     ],
     cta: 'Protect My Business',
     mostPopular: false,
+    link: 'https://buy.stripe.com/5kQ28r2cs48B6E51nv3VC00',
   },
   {
     name: 'Multi-Location Discount',
@@ -28,6 +29,7 @@ const tiers = [
     ],
     cta: 'Save with Multi-Location',
     mostPopular: true,
+    link: 'https://buy.stripe.com/4gM4gzeZe0Wp6E50jr3VC01',
   },
 ]
 
@@ -68,7 +70,7 @@ export default function Pricing() {
                 </ul>
               </div>
               <a
-                href="#"
+                href={tier.link}
                 className={`mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-bold ${
                   tier.mostPopular ? 'bg-primary-600 text-white hover:bg-primary-700' : 'bg-primary-50 text-primary-700 hover:bg-primary-100'
                 } transition`}
