@@ -1,0 +1,299 @@
+{% extends "base.html" %}
+{% block title %}Get a Free Estimate — NMG Construction{% endblock %}
+{% block description %}Request a free estimate from NMG Construction — Phoenix's trusted general contractor. We carefully vet every lead to match you with the right team for your project.{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <h1>Get Your Free Estimate</h1>
+        <p>Tell us about your project in the Valley of the Sun and we'll get back to you within 48 hours with a detailed estimate.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="contact-layout">
+            <div class="contact-info">
+                <h2>Let's Build Together in the Valley</h2>
+                <p>Fill out the form and we'll review your project details. Our Phoenix-based team responds to every qualified inquiry within 48 hours. We serve the entire Valley of the Sun.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-detail-item">
+                        <strong>Email</strong>
+                        <a href="mailto:info@nmgconstruction.com">info@nmgconstruction.com</a>
+                    </div>
+                    <div class="contact-detail-item">
+                        <strong>Phone</strong>
+                        <a href="tel:+16025551234">(602) 555-1234</a>
+                    </div>
+                    <div class="contact-detail-item">
+                        <strong>Service Area</strong>
+                        <span>Phoenix &bull; Scottsdale &bull; Mesa &bull; Chandler &bull; Gilbert &bull; Tempe</span>
+                    </div>
+                </div>
+
+                <div class="contact-testimonial">
+                    <p>"NMG made our kitchen remodel effortless in our Phoenix home. From the detailed estimate to the final walkthrough, everything was professional and on schedule."</p>
+                    <span>— Sarah M., Phoenix</span>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form id="leadForm" class="contact-form" novalidate>
+                    <input type="hidden" name="csrf_token" id="csrf_token" value="">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="John Smith">
+                            <span class="form-error" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            <span class="form-error" id="emailError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="property_type">Property Type <span class="required">*</span></label>
+                            <select id="property_type" name="property_type" required>
+                                <option value="">Select property type</option>
+                                <option value="Residential">Residential</option>
+                                <option value="Commercial">Commercial</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project_type">Project Type <span class="required">*</span></label>
+                        <select id="project_type" name="project_type" required>
+                            <option value="">Select a project type</option>
+                            <option value="Kitchen Remodel">Kitchen Remodel</option>
+                            <option value="Bath Remodel">Bath Remodel</option>
+                            <option value="Addition">Addition</option>
+                            <option value="Deck/Porch">Deck/Porch</option>
+                            <option value="Commercial">Commercial</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Estimated Budget Range <span class="required">*</span></label>
+                        <div class="radio-group" id="budget_group">
+                            <label class="radio-label">
+                                <input type="radio" name="budget_range" value="Under $10k" required>
+                                <span class="radio-custom"></span>
+                                Under $10k
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="budget_range" value="$10k–$25k">
+                                <span class="radio-custom"></span>
+                                $10k–$25k
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="budget_range" value="$25k–$50k">
+                                <span class="radio-custom"></span>
+                                $25k–$50k
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="budget_range" value="$50k–$100k">
+                                <span class="radio-custom"></span>
+                                $50k–$100k
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="budget_range" value="$100k+">
+                                <span class="radio-custom"></span>
+                                $100k+
+                            </label>
+                        </div>
+                        <span class="form-error" id="budgetError"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="timeline">Timeline <span class="required">*</span></label>
+                            <select id="timeline" name="timeline" required>
+                                <option value="">Select a timeline</option>
+                                <option value="ASAP">ASAP</option>
+                                <option value="1–3 months">1–3 months</option>
+                                <option value="3–6 months">3–6 months</option>
+                                <option value="Just Exploring / No Timeline">Just Exploring / No Timeline</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="is_decision_maker">Are you the property owner or primary decision-maker? <span class="required">*</span></label>
+                            <select id="is_decision_maker" name="is_decision_maker" required>
+                                <option value="">Select one</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="heard_via">How did you hear about us?</label>
+                        <select id="heard_via" name="heard_via">
+                            <option value="">Select one</option>
+                            <option value="Google Search">Google Search</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Referral">Referral</option>
+                            <option value="Previous Client">Previous Client</option>
+                            <option value="Online Ad">Online Ad</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Project Description</label>
+                        <textarea id="description" name="description" rows="4" placeholder="Tell us about your project — what rooms, scope of work, any specific materials or features you're interested in..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        <span id="submitText">Submit Your Project</span>
+                        <span id="submitSpinner" class="spinner" style="display:none;">&#9696;</span>
+                    </button>
+                </form>
+
+                <div id="formSuccess" class="form-success" style="display:none;">
+                    <div class="success-icon">&#10004;</div>
+                    <h3 id="successTitle">Thank You!</h3>
+                    <p id="successMessage">Your project details have been received. We'll be in touch within 48 hours.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('leadForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const submitText = document.getElementById('submitText');
+    const submitSpinner = document.getElementById('submitSpinner');
+    const formSuccess = document.getElementById('formSuccess');
+    const successTitle = document.getElementById('successTitle');
+    const successMessage = document.getElementById('successMessage');
+
+    // Clear errors on input
+    const clearError = (el) => {
+        const errorEl = document.getElementById(el.id + 'Error');
+        if (errorEl) errorEl.textContent = '';
+        el.classList.remove('input-error');
+    };
+    document.querySelectorAll('input, select, textarea').forEach(el => {
+        el.addEventListener('input', () => clearError(el));
+        el.addEventListener('change', () => clearError(el));
+    });
+
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        // Validate
+        let hasError = false;
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const budgetInputs = document.querySelectorAll('input[name="budget_range"]');
+        let budgetValue = '';
+        budgetInputs.forEach(i => { if (i.checked) budgetValue = i.value; });
+        const timeline = document.getElementById('timeline').value;
+        const decisionMaker = document.getElementById('is_decision_maker').value;
+        const projectType = document.getElementById('project_type').value;
+        const propertyType = document.getElementById('property_type').value;
+
+        if (!name) {
+            document.getElementById('nameError').textContent = 'Name is required';
+            document.getElementById('name').classList.add('input-error');
+            hasError = true;
+        }
+        if (!email || !email.includes('@')) {
+            document.getElementById('emailError').textContent = 'Valid email is required';
+            document.getElementById('email').classList.add('input-error');
+            hasError = true;
+        }
+        if (!budgetValue) {
+            document.getElementById('budgetError').textContent = 'Please select a budget range';
+            hasError = true;
+        }
+        if (!timeline) {
+            alert('Please select a timeline.');
+            hasError = true;
+        }
+        if (!decisionMaker) {
+            alert('Please indicate if you are the decision-maker.');
+            hasError = true;
+        }
+        if (!projectType) {
+            alert('Please select a project type.');
+            hasError = true;
+        }
+        if (!propertyType) {
+            alert('Please select a property type.');
+            hasError = true;
+        }
+
+        if (hasError) return;
+
+        // Show loading
+        submitBtn.disabled = true;
+        submitText.textContent = 'Submitting...';
+        submitSpinner.style.display = 'inline-block';
+
+        // Collect data
+        const formData = {
+            name: name,
+            email: email,
+            phone: document.getElementById('phone').value.trim(),
+            project_type: projectType,
+            budget_range: budgetValue,
+            timeline: timeline,
+            is_decision_maker: decisionMaker,
+            property_type: propertyType,
+            description: document.getElementById('description').value.trim(),
+            heard_via: document.getElementById('heard_via').value
+        };
+
+        try {
+            const response = await fetch('/api/submit-lead', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                form.style.display = 'none';
+                formSuccess.style.display = 'block';
+
+                if (data.score === 'hot') {
+                    successTitle.textContent = 'Thank You, ' + name + '!';
+                    successMessage.textContent = 'Your project looks like a great fit! A member of our team will contact you within 24 hours.';
+                } else if (data.score === 'warm') {
+                    successTitle.textContent = 'Thanks, ' + name + '!';
+                    successMessage.textContent = 'We\'ve received your information and will be in touch within 48 hours to discuss your project further.';
+                } else {
+                    successTitle.textContent = 'Thank You for Your Interest';
+                    successMessage.textContent = 'We\'ve received your submission. While your project may not fit our current services perfectly, we\'ll keep you on file and reach out if anything changes.';
+                }
+            } else {
+                alert('Error: ' + (data.message || 'Something went wrong. Please try again.'));
+            }
+        } catch (err) {
+            alert('Network error. Please try again later.');
+        } finally {
+            submitBtn.disabled = false;
+            submitText.textContent = 'Submit Your Project';
+            submitSpinner.style.display = 'none';
+        }
+    });
+});
+</script>
+{% endblock %}

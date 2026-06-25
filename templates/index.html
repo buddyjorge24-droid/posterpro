@@ -1,0 +1,209 @@
+{% extends "base.html" %}
+{% block title %}NMG Construction — Professional General Contracting{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="hero-content">
+            <span class="hero-badge">Licensed &bull; Bonded &bull; Insured &bull; Phoenix, AZ</span>
+            <h1>Phoenix's Premier<br><span class="text-accent">General Contractor</span></h1>
+            <p class="hero-subtitle">From kitchen remodels in Scottsdale to commercial build-outs in Tempe, NMG Construction delivers quality craftsmanship on time and on budget across the Valley of the Sun.</p>
+            <div class="hero-actions">
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Get Your Free Estimate</a>
+                <a href="{{ url_for('portfolio') }}" class="btn btn-outline">View Our Work</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">On-Time Delivery</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Trust Bar -->
+<section class="trust-bar">
+    <div class="container">
+        <div class="trust-grid">
+            <div class="trust-item">
+                <span class="trust-icon">&#10003;</span>
+                <span>Free Estimates</span>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">&#10003;</span>
+                <span>Licensed & Insured</span>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">&#10003;</span>
+                <span>Fixed-Price Contracts</span>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">&#10003;</span>
+                <span>5-Year Workmanship Warranty</span>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon">&#10003;</span>
+                <span>Eco-Friendly Options</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Overview -->
+<section class="section" id="services">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Services</h2>
+            <p class="section-subtitle">Comprehensive contracting services for homeowners, property managers, and businesses across Phoenix, Scottsdale, Mesa, Chandler, Gilbert & Tempe</p>
+        </div>
+        <div class="services-grid">
+            <a href="{{ url_for('services') }}#kitchen" class="service-card">
+                <div class="service-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="7" r="3"/><path d="M2 22V4a2 2 0 0 1 2-2h10.5"/><path d="M10 14H2"/><path d="M14 18H2"/><path d="M6 10H2"/><path d="M22 22V8a2 2 0 0 0-2-2h-2.5"/><path d="M18 14h-4"/><path d="M18 18h-4"/></svg>
+                </div>
+                <h3>Kitchen Remodels</h3>
+                <p>Complete kitchen transformations with custom cabinetry, countertops, and premium finishes that fit your lifestyle and budget.</p>
+                <span class="service-cta">Learn More &rarr;</span>
+            </a>
+            <a href="{{ url_for('services') }}#bath" class="service-card">
+                <div class="service-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1Z"/><path d="M6 12V5a2 2 0 0 1 2-2h3v2.25"/><path d="M4 21l1-3"/><path d="M20 21l-1-3"/></svg>
+                </div>
+                <h3>Bath Remodels</h3>
+                <p>Luxurious bathroom renovations featuring custom tile work, modern fixtures, walk-in showers, and spa-inspired designs.</p>
+                <span class="service-cta">Learn More &rarr;</span>
+            </a>
+            <a href="{{ url_for('services') }}#addition" class="service-card">
+                <div class="service-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M9 3h6"/><path d="M12 3v18"/><path d="M3 9h18"/><path d="M3 15h18"/></svg>
+                </div>
+                <h3>Home Additions</h3>
+                <p>Expand your living space with seamless room additions, sunrooms, second stories, and accessory dwelling units (ADUs).</p>
+                <span class="service-cta">Learn More &rarr;</span>
+            </a>
+            <a href="{{ url_for('services') }}#deck" class="service-card">
+                <div class="service-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12"/><path d="M2 20h20"/><path d="M6 12v4"/><path d="M10 12v4"/><path d="M14 12v4"/><path d="M18 12v4"/></svg>
+                </div>
+                <h3>Decks & Porches</h3>
+                <p>Beautiful outdoor living spaces with composite or natural wood decking, covered porches, and custom pergolas.</p>
+                <span class="service-cta">Learn More &rarr;</span>
+            </a>
+            <a href="{{ url_for('services') }}#commercial" class="service-card">
+                <div class="service-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6V3h14v3"/><path d="M5 10v11"/><path d="M19 10v11"/><path d="M9 14h.01"/><path d="M15 14h.01"/><path d="M9 18h.01"/><path d="M15 18h.01"/></svg>
+                </div>
+                <h3>Commercial</h3>
+                <p>Tenant improvements, office renovations, retail build-outs, and ongoing maintenance for property managers and landlords.</p>
+                <span class="service-cta">Learn More &rarr;</span>
+            </a>
+            <a href="{{ url_for('contact') }}" class="service-card service-card-cta">
+                <div class="service-icon">
+                    <span style="font-size:2rem;">+</span>
+                </div>
+                <h3>Not Sure Yet?</h3>
+                <p>Tell us about your project and we'll help you figure out the best approach. Free consultation, no obligation.</p>
+                <span class="service-cta">Start Here &rarr;</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="section section-dark">
+    <div class="container">
+        <div class="section-header">
+            <h2>Why Choose NMG Construction?</h2>
+            <p class="section-subtitle">We're not just builders — we're your neighbors in the Valley, committed to quality and transparency.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="feature-number">01</span>
+                <h3>Transparent Pricing</h3>
+                <p>No surprises. You get a detailed written estimate before any work begins, with clear line items for materials and labor.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-number">02</span>
+                <h3>Vetted Subcontractors</h3>
+                <p>Every trade partner is licensed, insured, and background-checked. We only work with craftspeople who share our standards.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-number">03</span>
+                <h3>Project Management</h3>
+                <p>Dedicated project oversight with regular updates, scheduled walkthroughs, and a single point of contact throughout.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-number">04</span>
+                <h3>Quality Guarantee</h3>
+                <p>We stand behind our work with a comprehensive warranty. If it's not right, we make it right — no questions asked.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>What Our Clients Say</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"NMG transformed our outdated Phoenix kitchen into the heart of our home. The team was professional, punctual, and the quality exceeded our expectations. Highly recommend!"</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">S</div>
+                    <div>
+                        <strong>Sarah M.</strong>
+                        <span>Kitchen Remodel, Phoenix</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"As a property manager in Tempe, I need reliable contractors I can count on. NMG has been our go-to for tenant improvements and maintenance for over three years. Never missed a deadline."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">J</div>
+                    <div>
+                        <strong>James R.</strong>
+                        <span>Property Manager, Tempe</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"Our covered patio and pergola in Gilbert turned out better than we imagined. The crew was respectful, cleaned up daily, and the final result is stunning. Already planning our next project."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">L</div>
+                    <div>
+                        <strong>Lisa & Tom K.</strong>
+                        <span>Covered Patio, Gilbert</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Tell us about your vision and we'll provide a free, no-obligation estimate within 48 hours. Serving Phoenix, Scottsdale, Mesa, Chandler, Gilbert & Tempe.</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary btn-large">Get Your Free Estimate</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

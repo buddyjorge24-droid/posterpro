@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+{% block title %}Portfolio — NMG Construction{% endblock %}
+{% block description %}View our portfolio of completed construction projects across Phoenix, Scottsdale, Mesa, Chandler, Gilbert & Tempe — kitchen remodels, bath remodels, home additions, covered patios, and commercial work.{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <h1>Our Portfolio</h1>
+        <p>A selection of projects we're proud to have completed across the Valley of the Sun.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="kitchen">Kitchens</button>
+            <button class="filter-btn" data-filter="bath">Bathrooms</button>
+            <button class="filter-btn" data-filter="addition">Additions</button>
+            <button class="filter-btn" data-filter="deck">Decks & Porches</button>
+            <button class="filter-btn" data-filter="commercial">Commercial</button>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="kitchen">
+                <div class="portfolio-image">
+                    <div class="placeholder-image">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="7" r="3"/><path d="M2 22V4a2 2 0 0 1 2-2h10.5"/></svg>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">Kitchen</span>
+                    <h3>Modern Open-Concept Kitchen &mdash; Phoenix</h3>
+                    <p>Complete remodel in Arcadia with custom shaker cabinetry, quartz countertops, waterfall island, and under-cabinet lighting.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="bath">
+                <div class="portfolio-image">
+                    <div class="placeholder-image">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1Z"/><path d="M6 12V5a2 2 0 0 1 2-2h3v2.25"/></svg>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">Bathroom</span>
+                    <h3>Spa-Inspired Master Bath &mdash; Scottsdale</h3>
+                    <p>Luxurious renovation in Scottsdale with freestanding soaking tub, frameless glass shower, dual vanity, and heated floors.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="addition">
+                <div class="portfolio-image">
+                    <div class="placeholder-image">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M9 3h6"/><path d="M12 3v18"/></svg>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">Addition</span>
+                    <h3>Sunroom & Family Room Addition &mdash; Mesa</h3>
+                    <p>Seamless 400 sq ft addition in Mesa with vaulted ceilings, skylights, and floor-to-ceiling windows — perfect for enjoying natural light year-round.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="deck">
+                <div class="portfolio-image">
+                    <div class="placeholder-image">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12"/><path d="M2 20h20"/></svg>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">Patio</span>
+                    <h3>Covered Patio & Outdoor Kitchen &mdash; Gilbert</h3>
+                    <p>Custom covered patio in Gilbert with shade structure, built-in grill, stone countertops, and ceiling fans for year-round outdoor living.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="commercial">
+                <div class="portfolio-image">
+                    <div class="placeholder-image">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6V3h14v3"/></svg>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">Commercial</span>
+                    <h3>Office Tenant Improvement &mdash; Tempe</h3>
+                    <p>Full office build-out in Tempe including private offices, open work areas, break room, conference rooms, and updated HVAC.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="kitchen">
+                <div class="portfolio-image">
+                    <div class="placeholder-image">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="7" r="3"/><path d="M2 22V4a2 2 0 0 1 2-2h10.5"/></svg>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">Kitchen</span>
+                    <h3>Traditional Farmhouse Kitchen &mdash; Chandler</h3>
+                    <p>Warm, inviting kitchen in Chandler with custom inset cabinetry, apron-front sink, butcher block counters, and walk-in pantry.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="bath">
+                <div class="portfolio-image">
+                    <div class="placeholder-image">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1Z"/></svg>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">Bathroom</span>
+                    <h3>Accessible Guest Bathroom &mdash; Phoenix</h3>
+                    <p>Thoughtfully designed bathroom in Phoenix with curbless shower, floating vanity, and stylish grab bars — beauty meets accessibility.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="commercial">
+                <div class="portfolio-image">
+                    <div class="placeholder-image">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M3 10h18"/><path d="M5 6V3h14v3"/></svg>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">Commercial</span>
+                    <h3>Retail Store Build-Out &mdash; Chandler</h3>
+                    <p>Complete retail space transformation in Chandler including new storefront, interior finishes, lighting, and custom display fixtures.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="deck">
+                <div class="portfolio-image">
+                    <div class="placeholder-image">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12"/></svg>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">Patio</span>
+                    <h3>Pergola & Shade Structure &mdash; Scottsdale</h3>
+                    <p>Custom cedar pergola in Scottsdale with retractable shade canopy, built-in seating, and landscape lighting for evening entertaining.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

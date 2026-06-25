@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% block title %}About Us — NMG Construction{% endblock %}
+{% block description %}Learn about NMG Construction — Phoenix's trusted general contractor. Our process, values, and commitment to quality serving the Valley of the Sun.{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+    <div class="container">
+        <h1>About NMG Construction</h1>
+        <p>Phoenix's trusted general contractor — built on a foundation of integrity, quality, and exceptional service.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="about-story">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Founded in Phoenix, NMG Construction was built with a simple mission: provide high-quality general contracting services across the Valley of the Sun without the headaches that too often come with construction projects. We've built our reputation project by project — through transparent communication, fair pricing, and uncompromising craftsmanship.</p>
+                <p>What sets us apart is our structured approach. We don't just take on any project that comes our way. We carefully vet every lead to ensure we can deliver the quality our clients expect, and we're honest when a project isn't the right fit for us. This means when we say yes, you can count on us to deliver.</p>
+                <p>Today, we serve homeowners, property managers, and commercial clients across Phoenix, Scottsdale, Mesa, Chandler, Gilbert, and Tempe, with a loyal base of repeat customers who refer us to their friends, family, and colleagues throughout the Valley.</p>
+            </div>
+            <div class="about-values">
+                <h3>Our Core Values</h3>
+                <div class="value-item">
+                    <span class="value-icon">&#9670;</span>
+                    <div>
+                        <strong>Craftsmanship</strong>
+                        <p>Every detail matters. We take pride in work that stands the test of time.</p>
+                    </div>
+                </div>
+                <div class="value-item">
+                    <span class="value-icon">&#9670;</span>
+                    <div>
+                        <strong>Integrity</strong>
+                        <p>Honest communication, transparent pricing, and doing what we say we will.</p>
+                    </div>
+                </div>
+                <div class="value-item">
+                    <span class="value-icon">&#9670;</span>
+                    <div>
+                        <strong>Reliability</strong>
+                        <p>We show up on time, finish on schedule, and never leave you guessing.</p>
+                    </div>
+                </div>
+                <div class="value-item">
+                    <span class="value-icon">&#9670;</span>
+                    <div>
+                        <strong>Respect</strong>
+                        <p>Your home or business is important. We treat it — and you — with respect.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Process -->
+<section class="section section-dark">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Process</h2>
+            <p class="section-subtitle">From initial consultation to final walkthrough, we keep you informed and involved.</p>
+        </div>
+        <div class="process-steps">
+            <div class="process-step">
+                <span class="step-number">1</span>
+                <div class="step-content">
+                    <h3>Free Consultation</h3>
+                    <p>Tell us about your project. We'll discuss your vision, budget, and timeline to see if we're a good fit. This can be done over the phone, via video call, or in person.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <span class="step-number">2</span>
+                <div class="step-content">
+                    <h3>Detailed Estimate</h3>
+                    <p>We provide a comprehensive written estimate with clear line items for materials, labor, and any subcontractor work. No fine print, no hidden fees.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <span class="step-number">3</span>
+                <div class="step-content">
+                    <h3>Planning & Permits</h3>
+                    <p>Once you approve the estimate, we handle all planning, material ordering, and permit applications so you don't have to worry about the details.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <span class="step-number">4</span>
+                <div class="step-content">
+                    <h3>Construction</h3>
+                    <p>Our crew gets to work with regular updates and scheduled walkthroughs. You'll always know where we are in the process and what to expect next.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <span class="step-number">5</span>
+                <div class="step-content">
+                    <h3>Final Walkthrough</h3>
+                    <p>We review every detail together. If anything isn't perfect, we make it right on the spot. We don't consider a project done until you're completely satisfied.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Let's Build Something Together</h2>
+            <p>Whether you have a clear vision or just starting to explore possibilities, we're here to help.</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary btn-large">Start Your Project</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
